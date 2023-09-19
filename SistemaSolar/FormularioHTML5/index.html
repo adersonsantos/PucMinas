@@ -1,0 +1,94 @@
+<!-- 
+    https://www.hipercultura.com/luas-de-saturno/
+    https://www.dm.ufscar.br/profs/waldeck/curso/html/apend/tabcod.html
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar</title>
+</head>
+<body>
+    <header>
+        <h1>Quiz sobre o Sistema Solar</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Pergunta 1</h2>
+            <form action="" method="get">
+                <p>Quantos planetas existem no Sistema Solar?</p>
+                <label>
+                    <input type="radio" name="pergunta1" id="a7" value="a" /> a &#41; 7
+                </label>
+                <label>
+                    <input type="radio" name="pergunta1" id="b8" value="b" /> b &#41; 8
+                </label>
+                <label>
+                    <input type="radio" name="pergunta1" id="c9" value="c" /> c &#41; 9
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Pergunta 2</h2>
+            <form action="" method="get">
+                <p>Quais destes são planetas gasosos? Selecione todas as opções corretas.</p>
+                <label>
+                    <input type="checkbox" name="pergunta2" id="marte" value="a" /> a &#41; Marte
+                </label>
+                <label>
+                    <input type="checkbox" name="pergunta2" id="jupiter" value="b" /> b &#41; Júpiter
+                </label>
+                <label>
+                    <input type="checkbox" name="pergunta2" id="venus" value="c" /> c &#41; Vênus
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Pergunta 3</h2>
+            <form action="" method="get">
+                <p>Qual é a maior lua de Saturno?</p>
+                <label for="lua_Saturno"></label>
+                <select name="pergunta3" id="lua_Saturno">
+                    <option value="calypso">Calypso</option>
+                    <option value="pandora">Pandora</option>
+                    <option value="methone">Methone</option>
+                    <option value="hyperion">Hyperion</option>
+                    <option value="mimas">Mimas</option>
+                    <option value="rhea">Rhea</option>
+                    <option value="iapetus">Iapetus</option>
+                    <option value="titan">Titan</option>
+                    <option value="enceladus">Enceladus</option>
+                    <option value="tethys">Tethys</option>
+                    <option value="dione">Dione</option>
+                    <option value="janus">Janus</option>
+                    <option value="prometheus">Prometheus</option>
+                    <option value="epimetheus">Epimetheus</option>
+                    <option value="helene">Helene</option>
+                </select>
+                <button id="lua_Saturno" type="submit">Enviar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Pergunta 4</h2>
+            <form action="" method="get">
+                <p>Em que ano a sonda Voyager 2 foi lançada para explorar os planetas do Sistema Solar?</p>
+                <input type="range" name="pergunta4" min="1950" max="1999" step="1" />
+                <label for="pergunta4"></label>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Sistema Solar</p>
+    </footer>
+    <script>
+        document.querySelector('input[type="range"]')
+        .addEventListener("input", function () {
+            document.querySelector('label[for="pergunta4"]').textContent = this.value;
+        });
+    </script>
+</body>
+</html>
