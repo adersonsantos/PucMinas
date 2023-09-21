@@ -1,0 +1,119 @@
+/* Importe uma fonte do Google Fonts (por exemplo, "Nunito") */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+header {
+  /* background-color: #007bff; // Original */
+  background-color: greenyellow; /* Mudei a cor de fundo do cabeçalho*/
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  /* font-family: "Nunito", sans-serif; // Original */
+  font-family: "arial", sans-serif; /* Mudei a fonte do cabeçalho*/
+  /* font-size: 32px; // Original */
+  font-size: 38px; /* Aumentei a fonte do cabeçalho*/
+  transition: background-color 0.3s ease;
+}
+
+header:hover {
+  /* background-color: #0056b3; //Original */
+  background-color: aquamarine; /* Alterei a cor do cabeçalho quando passa o mouse*/
+}
+
+section {
+  color: purple; /* Inclui a cor da letra do section */
+  /* background-color: #fff; //Original */
+  background-color: antiquewhite; /* Alterei a cor de fundo do section */
+  text-align: center; /* Inclui a centralização do texto no section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+form {
+  margin-top: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 18px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-family: "Nunito", sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+select:hover {
+  border-color: #007bff;
+}
+
+button[type="submit"] {
+  /* background-color: #28a745; //Original */
+  background-color: #007bff; /* Alterei a cor de fundo do botão */
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  /* background-color: #218838; //Original */
+  background-color: #87CEFA; /* Alterei a cor de fundo do botao quando se passa o mouse */
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+output {
+  display: block;
+  margin-top: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+footer {
+  /* background-color: #333; //Original */
+  background-color: chocolate; /* Alterei a cor do fundo do rodapé */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  /* font-family: "Nunito", sans-serif; //Original */
+  font-family: 'Times New Roman', Times, serif; /* Mudei a fonte do rodapé */
+  font-size: 16px;
+}
